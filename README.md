@@ -8,13 +8,13 @@ model suitable for conversion in softwre such as SuperMC or McCAD.
 It is expected that user of these tools has some level of competency using SpaceClaim. The tools do not fix broken CAD models nor is that their 
 intended purpose. In any case, the tools will likely not work with poorly defined geometry. 
 
-[More extensive documentation can be found here](docs)
+[More extensive documentation including installation instructions can be found here](docs)
 
 ## Development
 
 The tools have been produced using a combination of the C# API and python scripting available in ANSYS SpaceClaim. All tools exist in a single ribbon which is added when the tools are compiled. 
 
-Feedback on existing tools or proposals for new tools welcome to: Alex.Valentine@ukaea.uk
+Feedback on existing tools or proposals for new tools welcome.
 
 ## Included Tools and Purpose
 
