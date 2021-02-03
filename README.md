@@ -22,18 +22,18 @@ Feedback on existing tools or proposals for new tools welcome.
 | ------ | ------ |
 | Body Select | Highlights cones or tori, identifies small volumes (user input) and small rounds (user input) |
 | Export | Saves each different colour in geometry as separate .sat file |
-| Lost Particles | Plots MCNP lost particles on geometry|
-| Max Surfaces | Highlights all bodies with a number of surfaces exceeding user input |
-| Pipe Simplification | Automates simplification of pipe networks  |
-| Tori Simplificaiton | Simplifies complex tori to cylindrical bodies |
-| Cylinder Plane edge checker | Identifies a shared edge between and plane and cylinder in a single body |
-| Cylinder plane splitter | Splits a body along cylinder-plane edge |
+| Lost particles | Plots MCNP lost particles on geometry|
+| Max surfaces | Highlights all bodies with a number of surfaces exceeding user input |
+| Pipe tools | Automates simplification of pipe networks  |
+| Tori tools | Simplifies complex tori to cylindrical bodies |
+| Cylinder-plane locator | Identifies a shared edge between and plane and cylinder in a single body |
+| Cylinder-plane splitter | Splits a body along cylinder-plane edge |
 | Geometry assessor | Selects tori, cones, bodies with shared edges between higher order surfaces |
 | Mesh tally writer | Writes the MCNP definition for a mesh tally based on geometry |
 | Mesh tally checker | Plots simple mesh tallies from MCNP |
 | Cylinder Cylinder splitter | Splits along edge between two different cylinders |
-| Void Generator | Creates void cells for geometry to define reciprocal space |
-| Volume Assessor | Calculates volume of all solids in structure tree |
+| Void generator | Creates void cells for geometry to define reciprocal space |
+| Volume assessor | Calculates volume of all solids in structure tree |
 
 ## Installation
 
