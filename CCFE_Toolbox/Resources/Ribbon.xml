@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customUI xmlns="http://schemas.spaceclaim.com/customui">
+	<ribbon>
+		<tabs>
+			<tab id="CCFE_Toolbox.C#.V18.RibbonTab" command="CCFE_Toolbox.C#.V18.RibbonTab">
+				<!-- 
+					For the 'tab' and 'group' elements, you can either specify a 'label' attribute, or you can
+					specify a 'command' attribute.  The 'command' attribute gives the name of a command that you
+					create, whose Text property will be used for the label.  This approach allows for localization
+					since you can use a string resource.  For illustration, this first 'group' uses a 'command' 
+					attribute, and the remaining 'group' elements use a 'label' attribute.  If you specify both
+					attributes, the 'label' attribute is overridden by the 'command' attribute.
+				-->
+				<group id="CCFE_Toolbox.C#.V18.PartGroup" command="CCFE_Toolbox.C#.V18.PartGroup">
+					<!-- 
+						Command names match the names of Command objects created by the add-in in its 
+						ICommandExtensibility.Initialize method, or the names of built-in commands. Command names
+						need to be unique, and are typically of the form, "MyAddIn.MyCommandName".  Since there
+						are several sample add-ins for different languages and different versions of the API, and
+						since more than one of these sample add-ins might be enabled, these sample add-in commands
+						have the language and API version build into their name too, so that they do not clash.
+						In most cases a simple name of the form, "MyAddIn.MyCommandName", will suffice.
+										  
+						A 'button' element can also have a 'label' attribute instead of a 'command' attribute.
+						This could be used as a placeholder before a Command object has been created.  Note that
+						the image can only be specified if you use the 'command' attribute.  The Image property 
+						of the Command object is used.
+					-->
+          <button id="CCFE_Toolbox.C#.V18.Export" size="large" command="CCFE_Toolbox.C#.V18.Export"/>
+<!--          <button id="CCFE_Toolbox.C#.V18.ApplyColour" size="large" command="CCFE_Toolbox.C#.V18.ApplyColour"/>	
+          <button id="CCFE_Toolbox.C#.V18.Void" size="large" command="CCFE_Toolbox.C#.V18.Void"/>
+          <button id="CCFE_Toolbox.C#.V18.VoidSplitter" size="large" command="CCFE_Toolbox.C#.V18.VoidSplitter"/> -->
+          <button id="CCFE_Toolbox.C#.V18.BodySelect" size="large" command="CCFE_Toolbox.C#.V18.BodySelect"/>
+          <button id="CCFE_Toolbox.C#.V18.LostParticles" size="large" command="CCFE_Toolbox.C#.V18.LostParticles"/>
+          <button id="CCFE_Toolbox.C#.V18.MaxSurfaces" size="large" command="CCFE_Toolbox.C#.V18.MaxSurfaces"/>
+        </group>
+          <!--  Here are the original xml commands / syntax 
+					<button id="SampleAddIn.C#.V13.CreateBlock" size="large" command="SampleAddIn.C#.V13.CreateBlock"/>
+					<button id="SampleAddIn.C#.V13.CreateGear" size="large" command="SampleAddIn.C#.V13.CreateGear"/>
+					<button id="SampleAddIn.C#.V13.CreateTorus" size="large" command="SampleAddIn.C#.V13.CreateTorus"/>
+					<button id="SampleAddIn.C#.V13.CreateHole" size="large" command="SampleAddIn.C#.V13.CreateHole"/>
+				</group>
+        -->
+        <group id="CCFE_Toolbox.C#.V18.PipeGroup" label="Pipe and Tori Tools">
+          <button id="CCFE_Toolbox.C#.V18.Pipes_simp" size="large" command="CCFE_Toolbox.C#.V18.Pipes_simp"/>
+          <button id="CCFE_Toolbox.C#.V18.Tori_simp" size="large" command="CCFE_Toolbox.C#.V18.Tori_simp"/>
+        </group>
+        <!--  Here are the original xml commands / syntax 
+					<button id="SampleAddIn.C#.V13.CreateBlock" size="large" command="SampleAddIn.C#.V13.CreateBlock"/>
+					<button id="SampleAddIn.C#.V13.CreateGear" size="large" command="SampleAddIn.C#.V13.CreateGear"/>
+					<button id="SampleAddIn.C#.V13.CreateTorus" size="large" command="SampleAddIn.C#.V13.CreateTorus"/>
+					<button id="SampleAddIn.C#.V13.CreateHole" size="large" command="SampleAddIn.C#.V13.CreateHole"/>
+				</group>
+        -->
+
+		<group id="CCFE_Toolbox.C#.V18.PythonGroup" label="Python Tools">
+		  <button id="CCFE_Toolbox.C#.V18.CPS" size="large" command="CCFE_Toolbox.C#.V18.CPS"/>
+		  <button id="CCFE_Toolbox.C#.V18.CPEC" size="large" command="CCFE_Toolbox.C#.V18.CPEC"/>
+		  <button id="CCFE_Toolbox.C#.V18.PS" size="large" command="CCFE_Toolbox.C#.V18.PS"/>
+		  <button id="CCFE_Toolbox.C#.V18.VG" size="large" command="CCFE_Toolbox.C#.V18.VG"/>
+		  <button id="CCFE_Toolbox.C#.V18.MTW" size="large" command="CCFE_Toolbox.C#.V18.MTW"/>
+		  <button id="CCFE_Toolbox.C#.V18.GA" size="large" command="CCFE_Toolbox.C#.V18.GA"/>
+		  <button id="CCFE_Toolbox.C#.V18.VA" size="large" command="CCFE_Toolbox.C#.V18.VA"/>
+		  <button id="CCFE_Toolbox.C#.V18.MTC" size="large" command="CCFE_Toolbox.C#.V18.MTC"/>
+		  
+
+
+		</group>
+        <!--
+				<group id="SampleAddIn.C#.V13.AnnotateGroup" label="Annotate">
+					<button id="SampleAddIn.C#.V13.CreateNotes" size="large" command="SampleAddIn.C#.V13.CreateNotes"/>
+					<button id="SampleAddIn.C#.V13.CreateLayers" size="large" command="SampleAddIn.C#.V13.CreateLayers"/>
+				</group>
+				<group id="SampleAddIn.C#.V13.SelectGroup" label="Select">
+					<button id="SampleAddIn.C#.V13.FindMatchingFaces" size="large" command="SampleAddIn.C#.V13.FindMatchingFaces"/>
+					<button id="SampleAddIn.C#.V13.SelectLoop" size="large" command="SampleAddIn.C#.V13.SelectLoop"/>
+				</group>
+				<group id="SampleAddIn.C#.V13.GraphicsGroup" label="Graphics">
+					<button id="SampleAddIn.C#.V13.PolygonMesh" size="large" command="SampleAddIn.C#.V13.PolygonMesh"/>
+					<button id="SampleAddIn.C#.V13.SceneGraph" size="large" command="SampleAddIn.C#.V13.SceneGraph"/>
+					<button id="SampleAddIn.C#.V13.DeviationTool" size="large" command="SampleAddIn.C#.V13.DeviationTool"/>
+				</group>
+				<group id="SampleAddIn.C#.V13.OtherGroup" label="Other">
+          <button id="SampleAddIn.C#.V13.ImportBody" size="large" command="SampleAddIn.C#.V13.ImportBody"/>
+          <button id="SampleAddIn.C#.V13.Export" size="large" command="SampleAddIn.C#.V13.Export"/>
+          <button id="SampleAddIn.C#.V13.DumpObject" size="large" command="SampleAddIn.C#.V13.DumpObject"/>
+          <button id="SampleAddIn.C#.V13.SketchTool" size="large" command="SampleAddIn.C#.V13.SketchTool"/>
+          <button id="SampleAddIn.C#.V13.CustomTool" size="large" command="SampleAddIn.C#.V13.CustomTool"/>
+					<button id="SampleAddIn.C#.V13.CreateDesignRules" size="large" command="SampleAddIn.C#.V13.CreateDesignRules"/>
+        </group>
+        -->
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>

@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B529D8C7-515F-441D-927C-821AD95E7A55}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CCFE_Toolbox</RootNamespace>
+    <AssemblyName>CCFE_Toolbox</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>c:\ProgramData\SpaceClaim\AddIns\Samples\V18\CCFE_Toolkit\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Scripting">
+      <HintPath>C:\Program Files\ANSYS Inc\v182\scdm\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="SpaceClaim.Api.V16, Version=16.1.17034.0, Culture=neutral, PublicKeyToken=7210645d4d5e3a39, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\ANSYS Inc\v195\scdm\SpaceClaim.Api.V16\SpaceClaim.Api.V16.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceClaim.Api.V16.Scripting, Version=16.0.0.0, Culture=neutral, PublicKeyToken=7210645d4d5e3a39, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\ANSYS Inc\v195\scdm\SpaceClaim.Api.V16.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceClaim.Api.V18, Version=18.1.17034.0, Culture=neutral, PublicKeyToken=7210645d4d5e3a39, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\ANSYS Inc\v195\scdm\SpaceClaim.Api.V18\SpaceClaim.Api.V18.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceClaim.Api.V18.Scripting">
+      <HintPath>..\..\..\..\..\..\..\Program Files\ANSYS Inc\v195\scdm\SpaceClaim.Api.V18.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CCFE_Commands\BodySelect.cs" />
+    <Compile Include="CCFE_Commands\CylinderPlaneEdgeChecker.cs" />
+    <Compile Include="CCFE_Commands\MeshTallyChecker.cs" />
+    <Compile Include="CCFE_Commands\VolumeAssessor.cs" />
+    <Compile Include="CCFE_Commands\MeshTallyWriter.cs" />
+    <Compile Include="CCFE_Commands\VoidGenerator.cs" />
+    <Compile Include="CCFE_Commands\PipeSeperator.cs" />
+    <Compile Include="CCFE_Commands\GeometryAssessor.cs" />
+    <Compile Include="CCFE_Commands\CylinderPlaneSeperator.cs" />
+    <Compile Include="CCFE_Commands\StandardPipes.cs" />
+    <Compile Include="CCFE_Commands\LostParticles.cs" />
+    <Compile Include="CCFE_Commands\MaxSurfaces.cs" />
+    <Compile Include="CCFE_Toolbox_AddIn.cs" />
+    <Compile Include="CCFE_Commands\Tori_simp.cs" />
+    <Compile Include="CCFE_Commands\Pipe_simp.cs" />
+    <Compile Include="CCFE_Commands\Export.cs" />
+    <Compile Include="InstanceClasses\CommonSpaceClaimFunctions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BodySelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BodySelectForm.Designer.cs">
+      <DependentUpon>BodySelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VoidGeneratorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VoidGeneratorForm.Designer.cs">
+      <DependentUpon>VoidGeneratorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MeshTallyWriterForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MeshTallyWriterForm2.Designer.cs">
+      <DependentUpon>MeshTallyWriterForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MeshTallyWriterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MeshTallyWriterForm.Designer.cs">
+      <DependentUpon>MeshTallyWriterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GeometryAssessorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GeometryAssessorForm.Designer.cs">
+      <DependentUpon>GeometryAssessorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MeshTallyCheckerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MeshTallyCheckerForm.designer.cs">
+      <DependentUpon>MeshTallyCheckerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VolumeAssessorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VolumeAssessorForm.Designer.cs">
+      <DependentUpon>VolumeAssessorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pipes_Radius.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Pipes_Radius.Designer.cs">
+      <DependentUpon>Pipes_Radius.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PipeSimplificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PipeSimplificationForm.designer.cs">
+      <DependentUpon>PipeSimplificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ToriSimplificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ToriSimplificationForm.designer.cs">
+      <DependentUpon>ToriSimplificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LostParticlesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LostParticlesForm.Designer.cs">
+      <DependentUpon>LostParticlesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MaxSurfacesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MaxSurfacesForm.Designer.cs">
+      <DependentUpon>MaxSurfacesForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BodySelectForm.resx">
+      <DependentUpon>BodySelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VoidGeneratorForm.resx">
+      <DependentUpon>VoidGeneratorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MeshTallyWriterForm2.resx">
+      <DependentUpon>MeshTallyWriterForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MeshTallyWriterForm.resx">
+      <DependentUpon>MeshTallyWriterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GeometryAssessorForm.resx">
+      <DependentUpon>GeometryAssessorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MeshTallyCheckerForm.resx">
+      <DependentUpon>MeshTallyCheckerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VolumeAssessorForm.resx">
+      <DependentUpon>VolumeAssessorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PipeSimplificationForm.resx">
+      <DependentUpon>PipeSimplificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pipes_Radius.resx">
+      <DependentUpon>Pipes_Radius.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ToriSimplificationForm.resx">
+      <DependentUpon>ToriSimplificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LostParticlesForm.resx">
+      <DependentUpon>LostParticlesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MaxSurfacesForm.resx">
+      <DependentUpon>MaxSurfacesForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CCFE_Toolbox_Manifest.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Image1.png" />
+    <None Include="Resources\mtw_image1.png" />
+    <None Include="Resources\cpec_image.png" />
+    <None Include="Resources\PythonScripts\Cylinder-plane_splitter.scscript">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\PythonScripts\Cylinder-plane_locator.scscript">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\PythonScripts\Geometry_assessor.scscript">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\PythonScripts\Mesh_tally_checker.scscript" />
+    <None Include="Resources\PythonScripts\Mesh_tally_writer.scscript">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\PythonScripts\Cylinder-cylinder_splitter.scscript">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\PythonScripts\Void_generator.scscript">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\PythonScripts\Volume_assessor.scscript">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\va_image.png" />
+    <None Include="Resources\vg_image.png" />
+    <None Include="Resources\ps_image.png" />
+    <None Include="Resources\ga_image.png" />
+    <None Include="Resources\cps_image.png" />
+    <None Include="Resources\mtw_image.png" />
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\asme_pipes.txt" />
+    <None Include="Resources\GetPipes.bmp" />
+    <None Include="Resources\SketchTool.png" />
+    <None Include="Resources\SceneGraph.png" />
+    <None Include="Resources\FindMatchingFaces.png" />
+    <None Include="Resources\CreateAssembly.png" />
+    <None Include="Resources\APIpython.png" />
+    <None Include="Resources\tori_image.png" />
+    <None Include="Resources\pipe.png" />
+    <None Include="Resources\Pipes.bmp" />
+    <None Include="Resources\void_Image.png" />
+    <None Include="Resources\Export.png" />
+    <None Include="Resources\Ribbon.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Test\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCFE_Toolbox", "CCFE_Toolbox\CCFE_Toolbox.csproj", "{B529D8C7-515F-441D-927C-821AD95E7A55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B529D8C7-515F-441D-927C-821AD95E7A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B529D8C7-515F-441D-927C-821AD95E7A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B529D8C7-515F-441D-927C-821AD95E7A55}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B529D8C7-515F-441D-927C-821AD95E7A55}.Debug|x64.Build.0 = Debug|Any CPU
+		{B529D8C7-515F-441D-927C-821AD95E7A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B529D8C7-515F-441D-927C-821AD95E7A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B529D8C7-515F-441D-927C-821AD95E7A55}.Release|x64.ActiveCfg = Release|Any CPU
+		{B529D8C7-515F-441D-927C-821AD95E7A55}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C991A8F8-9041-494B-9537-64177A084A27}
+	EndGlobalSection
+EndGlobal
