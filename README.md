@@ -21,7 +21,7 @@ Feedback on existing tools or proposals for new tools welcome.
 | Tool | Purpose |
 | ------ | ------ |
 | Body Select | Highlights cones or tori, identifies small volumes (user input) and small rounds (user input) |
-| Export | Saves each different colour in geometry as separate .sat file |
+| Export | Saves bodies of different colour in geometry as separate .sat files |
 | Lost particles | Plots MCNP lost particles on geometry|
 | Max surfaces | Highlights all bodies with a number of surfaces exceeding user input |
 | Pipe tools | Automates simplification of pipe networks  |
@@ -77,6 +77,8 @@ Check that the Output path is set to:
 *C:ProgramData\SpaceClaim\AddIns\Samples\V16\CCFE\Toolkit* (Or the location of your ProgramData directory if this is not on your C drive.)
 
 ![install_9](https://user-images.githubusercontent.com/40658938/104892526-32494480-596a-11eb-881d-a8456f2b80a8.png)
+
+You can now build the tools in Visual Studio. **Please ensure that the SpaceClaim application is closed when you do this**.
 
 License
 ----
