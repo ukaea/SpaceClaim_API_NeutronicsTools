@@ -65,16 +65,18 @@ Add **SpaceClaim.Api.V16.dll**:
 
 ![install_6](https://user-images.githubusercontent.com/40658938/104892486-28274600-596a-11eb-94ea-00aab57643fb.png)
 
-Add **SpaceClaim.Api.V16.Scripting.dll** (found in *C:Program Files\ANSYS Inc\v192\scdm\*).
+Add **SpaceClaim.Api.V16.Scripting.dll** (found in *C:Program Files\ANSYS Inc\v192\scdm*).
 
 ![install_7](https://user-images.githubusercontent.com/40658938/104892505-2c536380-596a-11eb-923e-643ce6f5fea1.png)
+
+Repeat the above steps to also add **SpaceClaim.Api.V18.dll** and **SpaceClaim.Api.V18.Scripting.dll**.
 
 The next step is to make sure the output is placed into the correct folder, which can then be loaded by SpaceClaim when it opens. To do this the projects **‘Properties’** should be opened in the Solution Explorer. 
 
 ![install_8](https://user-images.githubusercontent.com/40658938/104892516-2f4e5400-596a-11eb-870a-dafe35f9ab76.png)
 
 Check that the Output path is set to:
-*C:ProgramData\SpaceClaim\AddIns\Samples\V16\CCFE\Toolkit* (Or the location of your ProgramData directory if this is not on your C drive.)
+*C:ProgramData\SpaceClaim\AddIns\Samples\V18\CCFE\Toolkit* (Or the location of your ProgramData directory if this is not on your C drive).
 
 ![install_9](https://user-images.githubusercontent.com/40658938/104892526-32494480-596a-11eb-881d-a8456f2b80a8.png)
 
