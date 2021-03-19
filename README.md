@@ -1,9 +1,12 @@
 # SpaceClaim API Neutronics Tools
 
-This repository contains a set of tools desgined the increase the efficiency of the preparation of CAD models for neutronics analysis. The tools
+Copyright 2021 United Kingdom Atomic Energy Agency (UKAEA)
+license: [MIT](LICENSE)
+
+This repository contains a set of tools designed the increase the efficiency of the preparation of CAD models for neutronics analysis. The tools
 automate many of the tasks typically undertaken to simply a detailed CAD model to a level suitable for particle transport. Install instructions 
-for inclusion of the tools as an addtional tab in the SpaceClaim GUI is provided below. The tools are desgined to aid.the user produce a CAD
-model suitable for conversion in softwre such as SuperMC or McCAD.
+for inclusion of the tools as an additional tab in the SpaceClaim GUI is provided below. The tools are designed to aid the user produce a CAD
+model suitable for conversion in software such as SuperMC or McCAD.
 
 It is expected that user of these tools has some level of competency using SpaceClaim. The tools do not fix broken CAD models nor is that their 
 intended purpose. In any case, the tools will likely not work with poorly defined geometry. 
@@ -76,16 +79,13 @@ The next step is to make sure the output is placed into the correct folder, whic
 ![install_8](https://user-images.githubusercontent.com/40658938/104892516-2f4e5400-596a-11eb-870a-dafe35f9ab76.png)
 
 Check that the Output path is set to:
-*C:ProgramData\SpaceClaim\AddIns\Samples\V18\CCFE\Toolkit* (Or the location of your ProgramData directory if this is not on your C drive).
+*`C:\ProgramData\SpaceClaim\AddIns\Samples\V18\CCFE\Toolkit`* (Or the location of your ProgramData directory if this is not on your C drive).
 
 ![install_9](https://user-images.githubusercontent.com/40658938/104892526-32494480-596a-11eb-881d-a8456f2b80a8.png)
 
 You can now build the tools in Visual Studio. **Please ensure that the SpaceClaim application is closed when you do this**.
 
-License
-----
 
-[MIT](LICENSE)
 
 
 

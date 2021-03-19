@@ -2,7 +2,7 @@
 <AddIns>
   <AddIn name="CCFE_Toolbox"
          description="CCFE API Toolbox."
-         assembly="C:\ProgramData\SpaceClaim\AddIns\Samples\V18\CCFE_Toolkit\CCFE_Toolbox.dll"
+         assembly="CCFE_Toolbox.dll"
          typename="CCFE_Toolbox.CCFE_Toolbox_AddIn"
          host="NewAppDomain"/>
 </AddIns>
